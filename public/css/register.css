@@ -1,0 +1,33 @@
+.regis {	
+	justify-content: center;
+	margin: 10%;
+	display: grid;
+	padding: 12px;
+	position: relative;
+	background-color: #111111;
+	color: white;
+	border-radius: 15px;
+}
+
+form div {
+	font-size: 1.3vw;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+}
+
+.item div{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+
+.item button{
+	background-color: white;
+	border-radius: 5px;
+	width: 100px;
+	height: 33px;
+	margin-top: 30px;
+	margin-left: 145px;
+}
+
+

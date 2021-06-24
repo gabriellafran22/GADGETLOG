@@ -1,0 +1,73 @@
+.onhover {
+	height: 95%;
+	margin-left: 2%;
+}
+
+.onhover img {
+	position: absolute;
+	height: 65%;
+	top: 10px;
+	left: 20px;
+	overflow: hidden;
+}
+
+.onhover .onhoverfront-image {
+	z-index: 9999;
+	cursor: pointer;
+}
+
+.onhover:hover > .onhoverfront-image{
+	opacity: 0;
+}
+
+#black{
+	background-color: black  !important;
+}
+
+.searchHeader{
+	position: absolute;
+	background-color: lightgrey;
+	border-radius: 5px;
+	right: 65px;
+}
+
+#userDropdown i{
+	position: absolute;
+	font-size: 36px;
+	right: 16px;
+	top: 17px;
+}
+
+#logout{
+	width: 200px;
+	height: 85px;
+	display: grid;
+	padding: 7px;
+	justify-content: center;
+}
+
+#logout div button{
+	background-color: lightgrey;
+	margin: auto;
+	border: 0px;
+
+	width: 80px;
+	border-radius: 5px;
+}
+
+#navbarrr{
+	box-shadow: 0px 2px 4px 0px #404040;
+	font-size: 15px;
+}
+
+.navbar li:hover {
+  background-color: #E6E6E6;
+  color: black;
+}
+
+#postbtn{
+	background-color: lightgray; 
+	color: black; 
+	height: 30px; 
+	font-size: 14px;
+}

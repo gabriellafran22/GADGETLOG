@@ -1,0 +1,173 @@
+section
+{
+	padding: 0% 5%;
+	display: block;
+}
+
+div.product
+{
+	display: block;
+	position: relative;
+	top:130px;
+	width: 100%;
+	float: left;
+}
+
+div.image
+{
+	display: inline-block;
+}
+
+div.product div.image img 
+{
+	height: 300px;
+}
+
+div.namerating
+{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 27px;
+	margin-top: 17px;
+}
+
+div.namerating div#compareButton button#compare
+{
+	margin-top: 9%;
+	display: block;
+	border: 2px;
+	border-style: solid;
+	border-radius: 25px;
+	width: 150px;
+	padding: 5px 15px;
+	background-color: white
+}
+
+div.namerating div#compareButton button#compare:hover
+{
+	border-color: gray;
+	color: gray;
+}
+
+div.shop
+{
+	display: block;
+	float: right;
+	background: rgba(255, 251, 251, 0.39);
+	box-sizing: border-box;
+	border-radius: 15px;
+	box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+	padding: 20px 30px 10px 30px;
+}
+
+div.shop h3
+{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+div.shop button.shopButton
+{
+	display: block;
+	border: 2px;
+	border-style: solid;
+	border-radius: 25px;
+	width: 150px;
+	padding: 5px 15px;
+	background-color: white;
+	margin-bottom: 20px;
+}
+
+div.shop button#official:hover
+{
+	border-color : darkred;
+	color : darkred;
+}
+
+div.shop button#shopee:hover
+{
+	border-color : #f53d2d;
+	color : #f53d2d;
+}
+
+div.shop button#tokopedia:hover
+{
+	border-color : #03AC0E;
+	color : #03AC0E;
+}
+
+div.shop button#blibli:hover
+{
+	border-color : #008FD2;
+	color : #008FD2;
+}
+
+div.specs
+{
+	position: relative;
+	top: 180px;
+	display: block;
+	z-index: -1; /* kalo ini ga dipake, tombol shop gabisa diklik */
+	margin-bottom: 30px;
+}
+
+div.specs div.section
+{
+	margin: 30px 0 10px 0 ;
+	display: block;
+}
+
+div.specs div.section > h4
+{
+	display: inline-block;
+	vertical-align: top;
+	width : 20%;
+}
+
+div.specs div.section div.inner-section
+{
+	display: inline-block;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+	width: 70%;
+}
+
+div.specs div.section div.inner-section div.part
+{
+	display: block;
+	padding-bottom: 20px;
+	height: max-content;
+}
+
+div.specs div.section 
+   div.inner-section div.part div.property /* mampus panjang */
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+}
+
+div.specs div.section
+   div.inner-section div.part div.value
+{
+	display: inline-block;	
+	width: 79%;
+}
+
+div.specs div.section
+   div.inner-section div.part div.value
+      p  
+{
+	margin-bottom: 0;
+	display: block;
+}
+
+#compare{
+	margin-top: 20px;
+	border: 2px;
+	border-style: solid;
+	border-radius: 25px;
+	width: 150px;
+	padding: 5px 15px;
+	background-color: white;
+	margin-bottom: 20px;
+}

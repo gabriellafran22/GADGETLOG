@@ -1,0 +1,39 @@
+.dropbtn {
+	display: block;
+	color: black;
+	margin-bottom: 50px;
+}
+
+.dropdown {
+  	font-size: 150%;
+  	margin-top : 100px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 1%;
+	min-width: 180px;
+	width: 90%;
+	box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+	margin-left: 150px;
+}
+
+.dropdown-content li a {
+	color: black;
+	padding: 12px 12px 12px 12px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover{
+	background-color: #ddd;
+}
+
+.dropbtn:hover .dropdown-content{
+	display: block;
+}
+
+.dropbtn:hover .dropdown-content:focus{
+	display: block;
+}

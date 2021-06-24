@@ -1,0 +1,60 @@
+section div.brands
+{
+	display: block;
+	margin-top: 100px;
+	margin-left: 20px;
+}
+
+section div.brands div.brand
+{
+	display: block;
+	padding-top:10px;
+	padding-bottom: 10px;
+
+	border-bottom-color: black;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+}
+
+section div.brands div.brand img
+{
+	height: 100px;
+	width: 100px;
+	margin-right: 90px;
+}
+
+section div.brands div.brand button
+{
+	border: 2px;
+	border-style: solid;
+	border-radius: 25px;
+	padding: 5px 15px 5px 15px;
+	background-color: white;
+	width: 150px;
+	margin-right: 8px;
+}
+
+section div.brands div.brand button#official:hover
+{
+	border-color: darkred;
+	color: darkred;
+}
+
+section div.brands div.brand button#tokopedia:hover
+{
+	border-color: green;
+	color:green;
+}
+
+section div.brands div.brand button#Shopee:hover
+{
+	border-color: #FF4500;
+	color: #FF4500;
+}
+
+section div.brands div.brand button#Blibli:hover
+{
+	border-color: #0094D9;
+	color: #0094D9;
+}
+

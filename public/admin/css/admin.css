@@ -1,0 +1,88 @@
+body {
+	width: 100%;
+	display: grid;
+	grid-template-areas: 
+		"header header"
+		"sidebar contentsss";
+	grid-template-columns: 18% 82%;
+}
+
+header{
+	background: #000000;
+	box-shadow: 0px 4px 4px 0px#404040;
+	grid-area: header;
+}
+
+header img {
+	height: 60%;
+	margin-top: 1.2%;
+	margin-left: 2%;
+	overflow: hidden;
+}
+
+nav{
+	background-color: black;
+	left: 0;
+	box-shadow: 0px 4px 4px 2px#404040;
+
+	grid-area: sidebar;
+	font-family: Trebuchet MS;
+}
+
+nav div#sidenavcomp{
+	display: grid;
+	grid-template-columns: 20% 80%;
+	grid-template-areas: "icon textt";
+	cursor: pointer;
+	background-color: black;
+}
+
+nav div#sidenavcomp i{
+	grid-area: icon;
+	margin: auto;
+	color: white; 
+	font-size: 25px;
+}
+
+nav div#sidenavcomp p{
+	grid-area: textt;
+	color: white;
+	font-size: 18px;
+	margin: 8px 12px;
+}
+
+div#gspecs div{
+	width: 449%;
+	display: inline-grid;
+	grid-template-columns: 20% 80%;
+	grid-template-areas: "icon textt";
+	cursor: pointer;
+	background-color: black;
+	margin-left: 20px;
+	padding: 10px 0px;
+}
+
+div#gspecs div i{ 
+	grid-area: icon;
+	font-size: 22px !important;
+}
+
+div#gspecs div p{ 
+	grid-area: textt;
+	margin-left: 20px;
+	font-size: 16px !important;
+}
+
+div#contents{
+	grid-area: contentsss;
+	justify-content: center;
+	padding: 20px 80px;
+}
+
+#sidenav #sidenavcomp i#active{
+	color: #0e93e3 !important;
+}
+
+#sidenav #sidenavcomp p#active{
+	color: #0e93e3 !important;
+}

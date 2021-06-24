@@ -1,0 +1,106 @@
+.specheader{
+	margin: 100px 40px;
+	display: grid;
+	grid-template-areas: "compare phoneOne phoneTwo";
+	grid-template-columns: 2fr 1.7fr 1.7fr;
+}
+
+.specheader button{
+	background-color: white;
+	border: 0;
+}
+
+hr{
+	margin: 0 30px;
+}
+
+.compare{
+	grid-area: compare;
+	align-self: center;
+}
+
+.phoneOne{
+	grid-area: phoneOne;
+}
+
+.phoneTwo {
+	grid-area: phoneTwo;	
+}
+
+#phoneimg{
+	height: 200px;
+}
+
+#phoneLogo{
+	height: 40px;
+}
+
+.spec{
+	margin: 10px 40px;
+	display: grid;
+	grid-template-areas: "detail subdetail specOne specTwo";
+	grid-template-columns: 1fr 1fr 1.7fr 1.7fr;
+	align-items: center;	
+}
+
+.detail{
+	grid-area: detail;
+}
+
+.subdetail {
+	grid-area: subdetail;
+}
+
+.specOne {
+	grid-area: specOne;
+	margin: auto 10px auto 0;
+}
+
+.specTwo{
+	grid-area: specTwo;
+	margin: auto 0 auto 10px;
+}
+
+#d-phones2 {
+	display: grid;
+	height: 300px;
+	overflow: auto;
+	position: absolute;
+	z-index: -999;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(auto-fit, 1fr);
+	row-gap: 3px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+#d-phones2 a{
+	color: black;
+	text-decoration: none;
+}
+
+#d-phones2 .dPhone2-items:hover {
+	background-color: rgba(150, 150, 150, 0.4);
+}
+
+#d-phones1 {
+	display: grid;
+	height: 300px;
+	overflow: auto;
+	position: absolute;
+	z-index: -999;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(auto-fit, 1fr);
+	row-gap: 3px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+#d-phones1 a{
+	color: black;
+	text-decoration: none;
+}
+
+#d-phones1 .dPhone1-items:hover {
+	background-color: rgba(150, 150, 150, 0.4);
+}

@@ -1,0 +1,62 @@
+body {
+	background-image: url('../image/loginpage.jpg');
+  	height: 80vh;
+  	background-color: #000b1d;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.container {
+	display: flex;
+	max-width: 500px;
+	flex-wrap: wrap;
+	margin: 100px auto;
+	background-color: rgb(0, 0, 0);
+	font-family: helvetica, arial;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.container h1 {
+	color: white;
+	margin: 25px auto;
+	filter: drop-shadow(2px 2px 1px rgba(200,200,200,.8) );
+}
+
+.regisForm {
+	width: 70%;
+	max-height: 300px;
+	margin: auto;
+	color:  white;
+}
+
+.form-group {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 15px auto;
+}
+
+.form-group label {
+	line-height: 25px;
+}
+
+.form-group input {
+	height: 20px;
+}
+
+.form-group input:focus {
+	box-shadow: 0px 0px 3px 3px rgba(14, 147, 227, 0.5);
+}
+
+.btn.btn-primary {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 30px;
+	transition: 0.3s;
+}
+
+.btn.btn-primary:hover {
+	box-shadow: 0px 0px 3px 3px rgba(14, 147, 227, 0.7);
+}

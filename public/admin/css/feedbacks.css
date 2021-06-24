@@ -1,0 +1,30 @@
+#tablee {
+    height: 300px;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+form{
+	margin-bottom: 0px;
+}
+
+form label{
+	margin-bottom: 10px;
+}
+
+
+th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #f2f2f2;
+  color: #030303;
+}
+
+th[scope=row] {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}

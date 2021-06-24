@@ -1,0 +1,239 @@
+body {
+	display: grid;
+	grid-template-areas: 
+		"header"
+		"nav"
+		"section"
+		"footer";
+}
+
+section {
+	grid-area: section;
+}
+
+header{
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	top: 0px;
+
+	background: #000000;
+	box-shadow: 0px 4px 4px 0px#404040;
+	grid-area: header;
+}
+
+#login button{
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	color: black;
+	background-color: black; 
+	border: 0; 
+	width: 40px;
+
+}
+
+#login button i{
+	position: absolute;
+	top: 1px;
+	right: 5px;
+	color: white; 
+	font-size: 37px;
+}
+
+ .loginform{
+	background-color: white;
+	width: 360px;
+}
+
+ .loginform div{
+	padding: 5px 40px;
+}
+
+ .loginform div input .submit{
+	width: 50px; 
+	background-color: white;
+	border-width: 2px;
+}
+
+#logout{
+	width: 200px;
+	height: 85px;
+	display: grid;
+	padding: 7px;
+	justify-content: center;
+}
+
+#logout div button{
+	background-color: lightgrey;
+	margin: auto;
+	position: absolute;
+	top: 55px;
+	left: 11px;
+
+	width: 80px;
+	border-radius: 5px;
+}
+
+#reg{
+	position: absolute;
+	right: 30px;
+}
+
+.onhover {
+	position: absolute;
+	height: 95%;
+	margin-top: 0.75%;
+	margin-left: 2%;
+}
+
+.onhover img {
+	position: absolute;
+	height: 50%;
+	margin-top: 0.75%;
+	margin-left: 2%;
+	overflow: hidden;
+}
+
+.onhover .onhoverfront-image {
+	z-index: 9999;
+	cursor: pointer;
+}
+
+.onhover:hover > .onhoverfront-image{
+	opacity: 0;
+}
+
+footer{
+	position: relative;
+	width: 100%;
+	height: 100px;
+
+	top: 200%;
+	bottom: 0px;
+	background: black;
+	grid-area: footer;
+}
+
+footer img{
+	margin-top: 2%;
+	margin-left: 2%;
+	height: 50%;
+}
+
+.navbar{
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	top: 70px;
+	bottom: 83%;
+
+	background: #FFFFFF;
+	border-radius: 0px;
+	overflow: hidden;
+	box-shadow: 0px 2px 4px 0px #404040;
+	grid-area: nav;
+}
+
+.navbar a{
+	width: 18.9%;
+	float: left;
+	color: #000000;
+	text-align: center;
+	padding: 5px 5px;
+	text-decoration: none !important;
+	font-size: 15px;
+}
+
+.navbar a:hover {
+  background-color: #E6E6E6;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #D9D9D9;
+  color: black;
+}
+
+.search{
+	position: absolute;
+	top: 17px;
+	right: 60px;
+	height: 37%;
+	width: 22%;
+	background-color: lightgrey;
+	border-radius: 5px;
+}
+
+.searchtext{
+	background-color: white;
+	position: absolute;
+	top: 5%;
+	right: 15%;
+	height: 84%;
+	width: 83%;
+	border-radius: 5px;
+	border-color: white;
+	outline: 0;
+}
+
+.searchbutton{
+	position: absolute;
+	top:5%;
+	right: 2.5%;
+	height: 80%;
+	/*height: 1.8vw;*/
+}
+
+.icon{
+	position: absolute;
+}
+
+.twitter{
+	bottom: 21%;
+	right: 7.7%;
+	height: 36%;
+}
+
+.youtube{
+	bottom: 28%;
+	right: 5.5%;
+	height: 21%;
+}
+
+.ig{
+	bottom: 25%;
+	right: 10.4%;
+	height: 25%;
+}
+
+#connect{
+	position: absolute;
+	color: white;
+	top: 20%;
+	right: 3%;
+}
+
+#dropdown-phones {
+	display: grid;
+	height: 300px;
+	overflow: auto;
+	position: absolute;
+	z-index: -999;
+	grid-template-columns: 285px;
+	grid-template-rows: repeat(auto-fit, 1fr);
+	row-gap: 3px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+#dropdown-phones a{
+	color: black;
+	text-decoration: none;
+}
+
+#dropdown-phones .dropPhone-items:hover {
+	background-color: rgba(150, 150, 150, 0.4);
+}
+
+
