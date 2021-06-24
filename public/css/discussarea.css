@@ -55,13 +55,31 @@
 	border-radius: 5px;
 }
 
-#navbarrr{
+.navbar{
+	grid-area: nav;
+
+	background: #FFFFFF;
+	border-radius: 0px;
 	box-shadow: 0px 2px 4px 0px #404040;
+}
+
+.navbar a{
+	width: 18.9%;
+	float: left;
+	color: #000000;
+	text-align: center;
+	padding: 5px 5px;
+	text-decoration: none !important;
 	font-size: 15px;
 }
 
-.navbar li:hover {
+.navbar a:hover {
   background-color: #E6E6E6;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #D9D9D9;
   color: black;
 }
 
@@ -70,4 +88,8 @@
 	color: black; 
 	height: 30px; 
 	font-size: 14px;
+}
+
+@media screen and (max-width: 800px) {
+	
 }

@@ -171,3 +171,16 @@ div.specs div.section
 	background-color: white;
 	margin-bottom: 20px;
 }
+
+@media screen and (max-width: 800px) {
+	div.product
+	{
+		top: 50px;
+	}
+
+	div.shop{
+		margin: 20px 0 0 50px;
+		float: left;
+	}
+
+}

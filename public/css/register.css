@@ -1,6 +1,6 @@
 .regis {	
 	justify-content: center;
-	margin: 10%;
+	margin: 50px 200px;
 	display: grid;
 	padding: 12px;
 	position: relative;
@@ -10,7 +10,7 @@
 }
 
 form div {
-	font-size: 1.3vw;
+	font-size: 16px;
 	color: white;
 	font-weight: bold;
 	padding: 10px;
@@ -30,4 +30,9 @@ form div {
 	margin-left: 145px;
 }
 
-
+@media screen and (max-width: 800px) {
+	.regis {	
+		margin: 50px 50px;
+		padding: 12px;
+	}
+}

@@ -18,10 +18,10 @@
 	<link rel="stylesheet" href="css/design.css">
 	<link rel="stylesheet" href="css/store.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="plugins/bootstrap.min.css">
-	<script src="plugins/jquery.min.js"></script>
-	<script src="plugins/popper.min.js"></script>
-	<script src="plugins/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -29,28 +29,25 @@
 	<!-- HEADER -->
 	<header>
 		<!-- LOGO -->
-		<figure class="onhover">
-			<img  class="onhoverfront-image" src="images/logo.jpg">
-			<img class="onhoverback-image" src="images/logo1.jpg"/>
-		</figure>
+		<div id="logo"></div>
 
-		<!-- search bar -->
-		<div class="search" id="SearchPhonessss">
+		<!-- SEARCH BAR -->
+		<div class="search" id="SearchPhonessss" >
 	        <form class="form-inline" action="/action_page.php" method="post">
-	          <input class="form-control mr-sm-1 mx-2" id="search-Phone" type="text" placeholder="Search Phone here" autocomplete="off" style="height: 28px !important; width: 230px;">
+	          <input class="form-control mr-sm-1 mx-2" id="search-Phone" type="text" placeholder="Search Phone here" autocomplete="off">
 	          <button class="btn btn-secondary" id="submitSearch" type="submit" name="searchPhones" style="background-color: lightgrey; border: 0;"><i class="fa fa-search" style="font-size: 20px; color: black;"></i></button>
 	        </form>	
 	        <div id="dropdown-phones"></div>
     	</div>
 
-		<!-- login -->
-		<div class="dropdown" id="login">
+    	<!-- LOGIN/LOGOUT -->
+    	<div class="dropdown" id="login">
 		<?php if (isset($_SESSION["login"])) : ?>
 			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-				<i class="fa fa-user-o" style="font-size: 36px; margin-top: 2px;"></i>
+				<i class="fa fa-user-o"></i>
 			</button>
 
-	  		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+	  		<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
 	  			<div id="logout">
 					<div>
 						<p>Hi, <?php echo $_SESSION['username']; ?></p>
@@ -66,18 +63,18 @@
 	   			<i class="fa fa-sign-in"></i>
 	  		</button>
 
-	  		  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+	  		  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
 			    <form method="post" class="loginform">
 			    	<div style="text-align: center;">
 			    		<b>LOGIN</b>
 			    	</div>
 			    	<div>
 			    		<label for="username">Username: </label>
-			    		<input type="text" name="username" id="username" style="position: absolute; right: 30px;">
+			    		<input type="text" name="username" id="username">
 			    	</div>
 			    	<div>
 			    		<label for="password">Password: </label>
-			    		<input type="password" name="password" id="password" style="position: absolute; right: 30px;">
+			    		<input type="password" name="password" id="password">
 			    	</div>
 			    	<div>
 			    		<input type="submit" name="login" value="Login" class="submit"> </input>
@@ -87,7 +84,6 @@
 			  </div>
 		<?php endif; ?>
 		</div>
-
 	</header>
 
 	<!-- NAVIGATION BAR -->
@@ -103,47 +99,63 @@
 	<section>
 		 <div class="brands">
 			<div class="brand">
-				<img src="images/applelogo.png">
-				<button id="official" onclick=" window.open('https://www.apple.com/id/','_blank')">Official Store</button>
-				<button id="Shopee" onclick=" window.open('https://shopee.co.id/iboxofficial','_blank')">Shopee</button>
+				<div>	
+					<img src="images/applelogo.png">
+				</div>
+				<div>		
+					<button id="official" onclick=" window.open('https://www.apple.com/id/','_blank')">Official Store</button>
+					<button id="Shopee" onclick=" window.open('https://shopee.co.id/iboxofficial','_blank')">Shopee</button>
+				</div>
 			</div>
 
 			<div class="brand">
-				<img src="images/huaweilogo.png">
-				<button id="official" onclick=" window.open('https://consumer.huawei.com/id/','_blank')">Official Store</button>
-				<button id="tokopedia" onclick=" window.open('https://www.tokopedia.com/huawei','_blank')">Tokopedia</button>
-				<button id="Shopee" onclick=" window.open('https://shopee.co.id/huawei.id','_blank')">Shopee</button>
-				<button id="Blibli" onclick=" window.open('https://www.blibli.com/merchant/huawei-authorized-official-store/HUE-60028','_blank')">Blibli.com</button>
+				<div>
+					<img src="images/huaweilogo.png">
+				</div>
+				<div>
+					<button id="official" onclick=" window.open('https://consumer.huawei.com/id/','_blank')">Official Store</button>
+					<button id="tokopedia" onclick=" window.open('https://www.tokopedia.com/huawei','_blank')">Tokopedia</button>
+					<button id="Shopee" onclick=" window.open('https://shopee.co.id/huawei.id','_blank')">Shopee</button>
+					<button id="Blibli" onclick=" window.open('https://www.blibli.com/merchant/huawei-authorized-official-store/HUE-60028','_blank')">Blibli.com</button>
+				</div>
 			</div>
 
 			<div class="brand">
-				<img src="images/samsunglogo.png">
-				<button id="official" onclick=" window.open('https://www.samsung.com/id/','_blank')">Official Store</button>
-				<button id="tokopedia" onclick=" window.open('https://www.tokopedia.com/samsung','_blank')">Tokopedia</button>
-				<button id="Shopee" onclick=" window.open('https://shopee.co.id/samsung.official','_blank')">Shopee</button>
-				<button id="Blibli" onclick=" window.open('https://www.blibli.com/anchor/samsung','_blank')">Blibli.com</button>
+				<div>
+					<img src="images/samsunglogo.png">
+				</div>
+				<div>
+					<button id="official" onclick=" window.open('https://www.samsung.com/id/','_blank')">Official Store</button>
+					<button id="tokopedia" onclick=" window.open('https://www.tokopedia.com/samsung','_blank')">Tokopedia</button>
+					<button id="Shopee" onclick=" window.open('https://shopee.co.id/samsung.official','_blank')">Shopee</button>
+					<button id="Blibli" onclick=" window.open('https://www.blibli.com/anchor/samsung','_blank')">Blibli.com</button>
+				</div>
 			</div>
 
 			<div class="brand">
-				<img src="images/xiaomilogo.png">
-				<button id="official" onclick=" window.open('https://www.mi.co.id/id/index.html','_blank')">Official Store</button>
-				<button id="tokopedia" onclick=" window.open('https://www.tokopedia.com/xiaomi','_blank')">Tokopedia</button>
-				<button id="Shopee" onclick=" window.open('https://shopee.co.id/xiaomi.official.id','_blank')">Shopee</button>
-				<button id="Blibli" onclick=" window.open('https://www.blibli.com/brand/xiaomi-official-store','_blank')">Blibli.com</button>
+				<div>
+					<img src="images/xiaomilogo.png">
+				</div>
+				<div>
+					<button id="official" onclick=" window.open('https://www.mi.co.id/id/index.html','_blank')">Official Store</button>
+					<button id="tokopedia" onclick=" window.open('https://www.tokopedia.com/xiaomi','_blank')">Tokopedia</button>
+					<button id="Shopee" onclick=" window.open('https://shopee.co.id/xiaomi.official.id','_blank')">Shopee</button>
+					<button id="Blibli" onclick=" window.open('https://www.blibli.com/brand/xiaomi-official-store','_blank')">Blibli.com</button>
+				</div>
 			</div>
 		 </div>
 	</section>
 
 	<!-- FOOTER -->
 	<footer>
-		<!-- LOGO -->
-		<img src="images/logo.jpg">
+		<div id="logofooter"></div>
 
-		<!-- SOCIAL MEDIA -->
-		<p id="connect">Get connected with us!</p>
-		<a href="https://www.twitter.com"> <img src="images/twitterlogo.png" class="icon twitter"> </a>
-		<a href="https://www.instagram.com"> <img src="images/iglogo.png" class="icon ig"> </a>
-		<a href="https://www.youtube.com"> <img src="images/youtubelogo.png" class="icon youtube"> </a>
+		<div id="contactus">
+			<p id="connect">Get connected with us!</p>
+			<a href="https://www.twitter.com"> <img src="images/twitterlogo.png" class="icon twitter"> </a>
+			<a href="https://www.instagram.com"> <img src="images/iglogo.png" class="icon ig"> </a>
+			<a href="https://www.youtube.com"> <img src="images/youtubelogo.png" class="icon youtube"> </a>
+		</div>
 	</footer>
 
 	<script src="js/searchPhone.js"></script>

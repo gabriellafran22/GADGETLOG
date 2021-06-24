@@ -104,3 +104,9 @@ hr{
 #d-phones1 .dPhone1-items:hover {
 	background-color: rgba(150, 150, 150, 0.4);
 }
+
+@media screen and (max-width: 800px) {
+	.specheader{
+		margin: 50px 40px;
+	}
+}

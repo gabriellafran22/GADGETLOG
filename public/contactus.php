@@ -41,28 +41,25 @@
 	<!-- HEADER -->
 	<header>
 		<!-- LOGO -->
-		<figure class="onhover">
-			<img  class="onhoverfront-image" src="images/logo.jpg">
-			<img class="onhoverback-image" src="images/logo1.jpg"/>
-		</figure>
+		<div id="logo"></div>
 
-		<!-- search bar -->
-		<div class="search" id="SearchPhonessss">
+		<!-- SEARCH BAR -->
+		<div class="search" id="SearchPhonessss" >
 	        <form class="form-inline" action="/action_page.php" method="post">
-	          <input class="form-control mr-sm-1 mx-2" id="search-Phone" type="text" placeholder="Search Phone here" autocomplete="off" style="height: 28px !important; width: 230px;">
+	          <input class="form-control mr-sm-1 mx-2" id="search-Phone" type="text" placeholder="Search Phone here" autocomplete="off">
 	          <button class="btn btn-secondary" id="submitSearch" type="submit" name="searchPhones" style="background-color: lightgrey; border: 0;"><i class="fa fa-search" style="font-size: 20px; color: black;"></i></button>
 	        </form>	
 	        <div id="dropdown-phones"></div>
     	</div>
 
-		<!-- login -->
-		<div class="dropdown" id="login">
+    	<!-- LOGIN/LOGOUT -->
+    	<div class="dropdown" id="login">
 		<?php if (isset($_SESSION["login"])) : ?>
 			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-				<i class="fa fa-user-o" style="font-size: 36px; margin-top: 2px;"></i>
+				<i class="fa fa-user-o"></i>
 			</button>
 
-	  		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+	  		<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
 	  			<div id="logout">
 					<div>
 						<p>Hi, <?php echo $_SESSION['username']; ?></p>
@@ -78,18 +75,18 @@
 	   			<i class="fa fa-sign-in"></i>
 	  		</button>
 
-	  		  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+	  		  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
 			    <form method="post" class="loginform">
 			    	<div style="text-align: center;">
 			    		<b>LOGIN</b>
 			    	</div>
 			    	<div>
 			    		<label for="username">Username: </label>
-			    		<input type="text" name="username" id="username" style="position: absolute; right: 30px;">
+			    		<input type="text" name="username" id="username">
 			    	</div>
 			    	<div>
 			    		<label for="password">Password: </label>
-			    		<input type="password" name="password" id="password" style="position: absolute; right: 30px;">
+			    		<input type="password" name="password" id="password">
 			    	</div>
 			    	<div>
 			    		<input type="submit" name="login" value="Login" class="submit"> </input>
@@ -99,7 +96,6 @@
 			  </div>
 		<?php endif; ?>
 		</div>
-
 	</header>
 
 	<!-- NAVIGATION BAR -->
@@ -159,8 +155,11 @@
 						<p> : </p> 
 						<textarea cols="47" rows="10" name="message" id="message" maxlength="500" required></textarea>
 					</label> <br>
-					<input type="reset" name="clear" value="CLEAR" class="button">
-					<button type="submit" class="button2" name="send">SEND</button>
+
+					<div class="buttons">
+						<button type="reset" name="clear" value="CLEAR" class="button">CLEAR</button>
+						<button type="submit" class="button" name="send">SEND</button>
+					</div>
 				</form>
 			</div>
 			
@@ -177,14 +176,14 @@
 
 	<!-- FOOTER -->
 	<footer>
-		<!-- LOGO -->
-		<img src="images/logo.jpg">
+		<div id="logofooter"></div>
 
-		<!-- SOCIAL MEDIA -->
-		<p id="connect">Get connected with us!</p>
-		<a href="https://www.twitter.com"> <img src="images/twitterlogo.png" class="icon twitter"> </a>
-		<a href="https://www.instagram.com"> <img src="images/iglogo.png" class="icon ig"> </a>
-		<a href="https://www.youtube.com"> <img src="images/youtubelogo.png" class="icon youtube"> </a>
+		<div id="contactus">
+			<p id="connect">Get connected with us!</p>
+			<a href="https://www.twitter.com"> <img src="images/twitterlogo.png" class="icon twitter"> </a>
+			<a href="https://www.instagram.com"> <img src="images/iglogo.png" class="icon ig"> </a>
+			<a href="https://www.youtube.com"> <img src="images/youtubelogo.png" class="icon youtube"> </a>
+		</div>
 	</footer>
 
 	<script src="js/searchPhone.js"></script>

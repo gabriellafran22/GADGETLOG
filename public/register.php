@@ -18,29 +18,35 @@ require 'function.php';
 	<title>Register Gadgetlog</title>
 	<link rel="stylesheet" href="css/design.css">
 	<link rel="stylesheet" href="css/register.css">
-	<link rel="stylesheet" href="plugins/bootstrap.min.css">
-	<script src="plugins/jquery.min.js"></script>
-	<script src="plugins/popper.min.js"></script>
-	<script src="plugins/bootstrap.min.js"></script>
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<!-- HEADER -->
 	<header>
 		<!-- LOGO -->
-		<figure class="onhover">
-			<img  class="onhoverfront-image" src="images/logo.jpg">
-			<img class="onhoverback-image" src="images/logo1.jpg"/>
-		</figure>
+		<div id="logo"></div>
+
+		<!-- SEARCH BAR -->
+		<div class="search" id="SearchPhonessss" >
+	        <form class="form-inline" action="/action_page.php" method="post">
+	          <input class="form-control mr-sm-1 mx-2" id="search-Phone" type="text" placeholder="Search Phone here" autocomplete="off">
+	          <button class="btn btn-secondary" id="submitSearch" type="submit" name="searchPhones" style="background-color: lightgrey; border: 0;"><i class="fa fa-search" style="font-size: 20px; color: black;"></i></button>
+	        </form>	
+	        <div id="dropdown-phones"></div>
+    	</div>
 	</header>
 
 	<nav class="navbar">
-		<a href="index.php">HOME</a>
-		<a href="brands.php">BRANDS</a>
-		<a href="store.php">STORE</a>
-		<a href="discussion.php">DISCUSSION</a>
-		<a href="contactus.php">CONTACT US</a>
-	</nav> 
+		<a href="index.php"><b>HOME</b></a>
+		<a href="brands.php"><b>BRANDS</b></a>
+		<a href="store.php"><b>STORE</b></a>
+		<a href="discussion.php"><b>DISCUSSION</b></a>
+		<a href="contactus.php"><b>CONTACT US</b></a>
+	</nav>  
 
 	<section>
 		<div class="regis">
@@ -68,14 +74,14 @@ require 'function.php';
 	</section>
 
 	<footer>
-		<!-- LOGO -->
-		<img src="images/logo.jpg">
+		<div id="logofooter"></div>
 
-		<!-- SOCIAL MEDIA -->
-		<p id="connect">Get connected with us!</p>
-		<a href="https://www.twitter.com"> <img src="images/twitterlogo.png" class="icon twitter"> </a>
-		<a href="https://www.instagram.com"> <img src="images/iglogo.png" class="icon ig"> </a>
-		<a href="https://www.youtube.com"> <img src="images/youtubelogo.png" class="icon youtube"> </a>
+		<div id="contactus">
+			<p id="connect">Get connected with us!</p>
+			<a href="https://www.twitter.com"> <img src="images/twitterlogo.png" class="icon twitter"> </a>
+			<a href="https://www.instagram.com"> <img src="images/iglogo.png" class="icon ig"> </a>
+			<a href="https://www.youtube.com"> <img src="images/youtubelogo.png" class="icon youtube"> </a>
+		</div>
 	</footer>
 	
 </body>

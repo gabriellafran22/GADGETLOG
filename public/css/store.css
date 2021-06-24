@@ -1,16 +1,19 @@
+section{
+	display: grid !important;
+}
+
 section div.brands
 {
-	display: block;
-	margin-top: 100px;
+	margin-top: 10px;
 	margin-left: 20px;
 }
 
 section div.brands div.brand
 {
-	display: block;
+	display: grid;
+	grid-template-columns: auto 1fr;
 	padding-top:10px;
 	padding-bottom: 10px;
-
 	border-bottom-color: black;
 	border-bottom-width: 2px;
 	border-bottom-style: solid;
@@ -20,7 +23,7 @@ section div.brands div.brand img
 {
 	height: 100px;
 	width: 100px;
-	margin-right: 90px;
+	margin-right: 50px;
 }
 
 section div.brands div.brand button
@@ -31,7 +34,12 @@ section div.brands div.brand button
 	padding: 5px 15px 5px 15px;
 	background-color: white;
 	width: 150px;
-	margin-right: 8px;
+	margin: 8px;
+}
+
+section div.brands div.brand div{
+	align-self: center;
+}
 }
 
 section div.brands div.brand button#official:hover
@@ -58,3 +66,20 @@ section div.brands div.brand button#Blibli:hover
 	color: #0094D9;
 }
 
+@media screen and (max-width: 800px) {
+	section div.brands
+	{
+		margin-top: 10px;
+	}
+
+	section div.brands div.brand img
+	{
+		margin-right: 20px;
+	}
+
+	section div.brands div.brand
+	{
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+	}
+}

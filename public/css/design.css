@@ -1,3 +1,8 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	display: grid;
 	grid-template-areas: 
@@ -12,48 +17,79 @@ section {
 }
 
 header{
-	position: absolute;
-	width: 100%;
-	height: 100px;
-	top: 0px;
-
+	grid-area: header;
+	height: 80px;
+	display: grid !important;
+	grid-template-columns: 3fr 1fr 0.3fr;
+	grid-template-areas: "logo search loginlogout";
+	align-items: center;
 	background: #000000;
 	box-shadow: 0px 4px 4px 0px#404040;
-	grid-area: header;
+}
+
+div#logo{
+	grid-area: logo;
+	background-image: url('../images/logo.jpg');
+	height: 50px;
+	width: 300px;
+	background-repeat: no-repeat;
+	background-size: 300px;
+}
+
+div#logo:hover{
+	background-image: url('../images/logo1.jpg');
+}
+
+.search{
+	grid-area: search;
+	background-color: lightgrey;
+	border-radius: 5px;
+	height: 40px !important;
+	width: 290px;
+	justify-self: right;
+}
+
+#search-Phone{
+	height: 30px; 
+	margin-top: 3px;
+	width: 230px;
+}
+
+#login{
+	grid-area: loginlogout;
 }
 
 #login button{
-	position: absolute;
-	top: 15px;
-	right: 10px;
+	margin: 14px 0 14px 14px;
 	color: black;
 	background-color: black; 
 	border: 0; 
-	width: 40px;
-
+	width: 80px;
 }
 
 #login button i{
-	position: absolute;
-	top: 1px;
-	right: 5px;
 	color: white; 
 	font-size: 37px;
 }
 
- .loginform{
+.loginform{
 	background-color: white;
 	width: 360px;
 }
 
- .loginform div{
+.loginform div{
 	padding: 5px 40px;
 }
 
- .loginform div input .submit{
-	width: 50px; 
-	background-color: white;
-	border-width: 2px;
+.loginform div input.submit{
+	width: 80px; 
+	background-color: lightgrey;
+	border-width: 0.5px;
+	border-radius: 3px;
+}
+
+.loginform div a{
+	margin-left: 120px;
 }
 
 #logout{
@@ -62,77 +98,23 @@ header{
 	display: grid;
 	padding: 7px;
 	justify-content: center;
+	text-align: center;
 }
 
 #logout div button{
 	background-color: lightgrey;
 	margin: auto;
-	position: absolute;
-	top: 55px;
-	left: 11px;
 
 	width: 80px;
 	border-radius: 5px;
 }
 
-#reg{
-	position: absolute;
-	right: 30px;
-}
-
-.onhover {
-	position: absolute;
-	height: 95%;
-	margin-top: 0.75%;
-	margin-left: 2%;
-}
-
-.onhover img {
-	position: absolute;
-	height: 50%;
-	margin-top: 0.75%;
-	margin-left: 2%;
-	overflow: hidden;
-}
-
-.onhover .onhoverfront-image {
-	z-index: 9999;
-	cursor: pointer;
-}
-
-.onhover:hover > .onhoverfront-image{
-	opacity: 0;
-}
-
-footer{
-	position: relative;
-	width: 100%;
-	height: 100px;
-
-	top: 200%;
-	bottom: 0px;
-	background: black;
-	grid-area: footer;
-}
-
-footer img{
-	margin-top: 2%;
-	margin-left: 2%;
-	height: 50%;
-}
-
 .navbar{
-	position: absolute;
-	left: 0%;
-	right: 0%;
-	top: 70px;
-	bottom: 83%;
+	grid-area: nav;
 
 	background: #FFFFFF;
 	border-radius: 0px;
-	overflow: hidden;
 	box-shadow: 0px 2px 4px 0px #404040;
-	grid-area: nav;
 }
 
 .navbar a{
@@ -155,63 +137,55 @@ footer img{
   color: black;
 }
 
-.search{
-	position: absolute;
-	top: 17px;
-	right: 60px;
-	height: 37%;
-	width: 22%;
-	background-color: lightgrey;
-	border-radius: 5px;
+footer{
+	margin-top: 30px;
+	height: 100px;
+
+	background: black;
+	grid-area: footer;
+	display: grid !important;
+	grid-template-columns: 5fr 1fr;
+	grid-template-areas: "logo contactus";
 }
 
-.searchtext{
-	background-color: white;
-	position: absolute;
-	top: 5%;
-	right: 15%;
-	height: 84%;
-	width: 83%;
-	border-radius: 5px;
-	border-color: white;
-	outline: 0;
+footer div{
+	height: 80px;
 }
 
-.searchbutton{
-	position: absolute;
-	top:5%;
-	right: 2.5%;
-	height: 80%;
-	/*height: 1.8vw;*/
+div#logofooter{
+	grid-area: logo;
+	background-image: url('../images/logo.jpg');
+	height: 60%;
+	background-repeat: no-repeat;
+	margin: 20px 10px;
+	background-size: 300px;
 }
 
-.icon{
-	position: absolute;
+div#contactus{
+	grid-area: contactus;
+}
+
+footer img{
+	height: 50%;
+}
+
+footer p{
+	color: white;
+	margin: 15px 0 5px;
 }
 
 .twitter{
-	bottom: 21%;
-	right: 7.7%;
-	height: 36%;
-}
-
-.youtube{
-	bottom: 28%;
-	right: 5.5%;
-	height: 21%;
+	margin-left: 15px;
+	height: 40px;
 }
 
 .ig{
-	bottom: 25%;
-	right: 10.4%;
-	height: 25%;
+	height: 30px;
 }
 
-#connect{
-	position: absolute;
-	color: white;
-	top: 20%;
-	right: 3%;
+.youtube{
+	height: 24px;
+	margin-left: 10px;
 }
 
 #dropdown-phones {
@@ -236,4 +210,110 @@ footer img{
 	background-color: rgba(150, 150, 150, 0.4);
 }
 
+/*tablets*/
+@media screen and (max-width: 800px) {
+    header{
+			height: 160px;
+			grid-template-columns: 2.2fr 1fr;
+			grid-template-areas: 
+			"logo logo"
+			"search loginlogout";
+		}
 
+		div#logo{
+			height: 50px;
+			width: 300px;
+			background-repeat: no-repeat;
+			background-image: url('../images/logo.jpg') !important;
+			margin-top: 20px;
+			justify-self: center;
+			background-size: 300px;
+		}
+
+		.search{
+			justify-self: right;
+			width: 290px;
+		}
+
+		#search-Phone{
+			height: 30px;
+			margin-top: 4px;
+			width: 230px;
+		}
+
+		#login{
+			grid-area: loginlogout;
+		}
+
+		#login button{
+			margin: 14px 0 14px 14px;
+			color: black;
+			background-color: black; 
+			border: 0; 
+			width: 50px;
+
+		}
+
+		#login button i{
+			color: white; 
+			font-size: 37px;
+		}
+
+		 .loginform{
+			background-color: white;
+			width: 360px;
+		}
+
+		 .loginform div{
+			padding: 5px 40px;
+		}
+
+		 .loginform div input .submit{
+			width: 50px; 
+			background-color: white;
+			border-width: 2px;
+		}
+
+		#logout{
+			width: 200px;
+			height: 85px;
+			display: grid;
+			padding: 7px;
+			justify-content: center;
+		}
+
+		#logout div button{
+			background-color: lightgrey;
+			margin: auto;
+			top: 55px;
+			left: 11px;
+
+			width: 80px;
+			border-radius: 5px;
+		}
+
+    footer{
+			height: 200px;
+			grid-template-columns: unset;
+			grid-template-areas: 
+			"logo" 
+			"contactus";
+			justify-content: center;
+		}
+
+		#contactus{
+			justify-self: center;
+		}
+
+		div#logofooter{
+			height: 55px;
+			width: 350px;
+			margin: 20px 0 0 0;
+			background-size: 350px;
+		}
+}
+
+/*phones*/
+@media screen and (max-width: 450px) {
+
+}

@@ -44,66 +44,63 @@ require "function.php";
 <body>
     <!-- HEADER -->
     <header>
-        <!-- LOGO -->
-        <figure class="onhover">
-            <img  class="onhoverfront-image" src="images/logo.jpg">
-            <img class="onhoverback-image" src="images/logo1.jpg"/>
-        </figure>
+		<!-- LOGO -->
+		<div id="logo"></div>
 
-        <!-- search bar -->
-        <div class="search">
-            <form class="form-inline" action="/action_page.php" method="post">
-              <input class="form-control mr-sm-1 mx-2" id="search-Phone" type="text" placeholder="Search Phone here" autocomplete="off" style="height: 28px !important; width: 230px;">
-              <button class="btn btn-secondary" id="submitSearch" type="submit" name="searchPhones" style="background-color: lightgrey; border: 0;"><i class="fa fa-search" style="font-size: 20px; color: black;"></i></button>
-            </form> 
-            <div id="dropdown-phones"></div>
-        </div>
+		<!-- SEARCH BAR -->
+		<div class="search" id="SearchPhonessss" >
+	        <form class="form-inline" action="/action_page.php" method="post">
+	          <input class="form-control mr-sm-1 mx-2" id="search-Phone" type="text" placeholder="Search Phone here" autocomplete="off">
+	          <button class="btn btn-secondary" id="submitSearch" type="submit" name="searchPhones" style="background-color: lightgrey; border: 0;"><i class="fa fa-search" style="font-size: 20px; color: black;"></i></button>
+	        </form>	
+	        <div id="dropdown-phones"></div>
+    	</div>
 
-        <!-- login -->
-        <div class="dropdown" id="login">
-        <?php if (isset($_SESSION["login"])) : ?>
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                <i class="fa fa-user-o" style="font-size: 36px; margin-top: 2px;"></i>
-            </button>
+    	<!-- LOGIN/LOGOUT -->
+    	<div class="dropdown" id="login">
+		<?php if (isset($_SESSION["login"])) : ?>
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+				<i class="fa fa-user-o"></i>
+			</button>
 
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <div id="logout">
-                    <div>
-                        <p>Hi, <?php echo $_SESSION['username']; ?></p>
-                    </div> 
-                    <div>
-                        <button onclick="if(confirm('Are you sure?')) window.open('logout.php','_self'); return false"> Logout
-                        </button>
-                    </div>
-                </div>
-            </div>
-        <?php else: ?>
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                <i class="fa fa-sign-in"></i>
-            </button>
+	  		<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+	  			<div id="logout">
+					<div>
+						<p>Hi, <?php echo $_SESSION['username']; ?></p>
+					</div> 
+					<div>
+						<button onclick="if(confirm('Are you sure?')) window.open('logout.php','_self'); return false"> Logout
+						</button>
+					</div>
+				</div>
+	  		</div>
+		<?php else: ?>
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+	   			<i class="fa fa-sign-in"></i>
+	  		</button>
 
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <form method="post" class="loginform">
-                    <div style="text-align: center;">
-                        <b>LOGIN</b>
-                    </div>
-                    <div>
-                        <label for="username">Username: </label>
-                        <input type="text" name="username" id="username" style="position: absolute; right: 30px;">
-                    </div>
-                    <div>
-                        <label for="password">Password: </label>
-                        <input type="password" name="password" id="password" style="position: absolute; right: 30px;">
-                    </div>
-                    <div>
-                        <input type="submit" name="login" value="Login" class="submit"> </input>
-                        <a href="register.php" id="reg"> Register </a>
-                    </div>
-                </form>
-              </div>
-        <?php endif; ?>
-        </div>
-    </header>
+	  		  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+			    <form method="post" class="loginform">
+			    	<div style="text-align: center;">
+			    		<b>LOGIN</b>
+			    	</div>
+			    	<div>
+			    		<label for="username">Username: </label>
+			    		<input type="text" name="username" id="username">
+			    	</div>
+			    	<div>
+			    		<label for="password">Password: </label>
+			    		<input type="password" name="password" id="password">
+			    	</div>
+			    	<div>
+			    		<input type="submit" name="login" value="Login" class="submit"> </input>
+			    		<a href="register.php" id="reg"> Register </a>
+			    	</div>
+			    </form>
+			  </div>
+		<?php endif; ?>
+		</div>
+	</header>
 
         <!-- NAVIGATION BAR -->
     <nav class="navbar">
@@ -530,15 +527,15 @@ require "function.php";
 
     <!-- FOOTER -->
     <footer>
-        <!-- LOGO -->
-        <img src="images/logo.jpg">
+		<div id="logofooter"></div>
 
-        <!-- SOCIAL MEDIA -->
-        <p id="connect">Get connected with us!</p>
-        <a href="https://www.twitter.com"> <img src="images/twitterlogo.png" class="icon twitter"> </a>
-        <a href="https://www.instagram.com"> <img src="images/iglogo.png" class="icon ig"> </a>
-        <a href="https://www.youtube.com"> <img src="images/youtubelogo.png" class="icon youtube"> </a>
-    </footer>
+		<div id="contactus">
+			<p id="connect">Get connected with us!</p>
+			<a href="https://www.twitter.com"> <img src="images/twitterlogo.png" class="icon twitter"> </a>
+			<a href="https://www.instagram.com"> <img src="images/iglogo.png" class="icon ig"> </a>
+			<a href="https://www.youtube.com"> <img src="images/youtubelogo.png" class="icon youtube"> </a>
+		</div>
+	</footer>
     <script src="js/searchPhone.js"></script>
 </body>
 </html>

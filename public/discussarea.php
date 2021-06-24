@@ -96,25 +96,13 @@
     </div>
   </header>
 
-  <nav class="navbar navbar-expand-sm bg-white justify-content-center" id="navbarrr">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link text-dark font-weight-bold mx-5" href="index.php">HOME</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark font-weight-bold mx-5" href="brands.php">BRAND</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark font-weight-bold mx-5" href="store.php">STORE</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark font-weight-bold mx-5" href="discussion.php">DISSCUSION</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark font-weight-bold mx-5" href="contactus.php">CONTACT US</a>
-      </li>
-    </ul>
-  </nav>
+  <nav class="navbar">
+		<a href="index.php"><b>HOME</b></a>
+		<a href="brands.php"><b>BRANDS</b></a>
+		<a href="store.php"><b>STORE</b></a>
+		<a href="discussion.php"><b>DISCUSSION</b></a>
+		<a href="contactus.php"><b>CONTACT US</b></a>
+	</nav>  
 
 
   <div class="container-fluid py-4 mb-0">
