@@ -34,6 +34,7 @@ div#logo{
 	width: 300px;
 	background-repeat: no-repeat;
 	background-size: 300px;
+	margin-left: 20px;
 }
 
 div#logo:hover{

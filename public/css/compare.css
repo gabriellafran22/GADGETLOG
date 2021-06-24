@@ -1,5 +1,5 @@
 .specheader{
-	margin: 100px 40px;
+	margin: 40px 40px;
 	display: grid;
 	grid-template-areas: "compare phoneOne phoneTwo";
 	grid-template-columns: 2fr 1.7fr 1.7fr;
@@ -29,6 +29,11 @@ hr{
 
 #phoneimg{
 	height: 200px;
+}
+
+#phoneimg:hover{
+	transform: scale(0.9);
+	transition: 0.3s;
 }
 
 #phoneLogo{
@@ -105,8 +110,52 @@ hr{
 	background-color: rgba(150, 150, 150, 0.4);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 450px) {
 	.specheader{
-		margin: 50px 40px;
+		margin: 40px 20px;
+	}
+	
+	.compare{
+		font-size: 35px;
+	}
+
+	#phoneimg{
+		height: 120px;
+	}
+
+	#sPhone1{
+		width: 100px;
+	}
+
+	#sPhone2{
+		width: 100px;
+	}
+
+	.phoneOne{
+		font-size: 14px;
+	}
+	
+	.phoneTwo {
+		font-size: 14px;
+	}
+	
+	.detail{
+		font-size: 18px;
+	}
+
+	.subdetail{
+		font-size: 14px;
+	}
+
+	.specOne {
+		font-size: 12px;
+	}
+	
+	.specTwo{
+		font-size: 12px;
+	}
+
+	.spec{
+		margin: 10px 20px;
 	}
 }

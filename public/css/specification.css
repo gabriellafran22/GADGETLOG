@@ -8,7 +8,7 @@ div.product
 {
 	display: block;
 	position: relative;
-	top:130px;
+	top: 60px;
 	width: 100%;
 	float: left;
 }
@@ -22,6 +22,13 @@ div.product div.image img
 {
 	height: 300px;
 }
+
+div.product div.image img:hover
+{
+	transform: scale(0.9);
+	transition: 0.3s;
+}
+
 
 div.namerating
 {
@@ -104,8 +111,7 @@ div.shop button#blibli:hover
 
 div.specs
 {
-	position: relative;
-	top: 180px;
+	margin-top: 400px;
 	display: block;
 	z-index: -1; /* kalo ini ga dipake, tombol shop gabisa diklik */
 	margin-bottom: 30px;
@@ -183,4 +189,8 @@ div.specs div.section
 		float: left;
 	}
 
+	div.specs
+	{
+		margin-top: 750px;
+	}
 }
