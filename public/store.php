@@ -100,7 +100,7 @@
 		 <div class="brands">
 			<div class="brand">
 				<div>	
-					<img src="images/applelogo.png">
+					<img src="images/Applelogo.png">
 				</div>
 				<div>		
 					<button id="official" onclick=" window.open('https://www.apple.com/id/','_blank')">Official Store</button>
@@ -110,7 +110,7 @@
 
 			<div class="brand">
 				<div>
-					<img src="images/huaweilogo.png">
+					<img src="images/Huaweilogo.png">
 				</div>
 				<div>
 					<button id="official" onclick=" window.open('https://consumer.huawei.com/id/','_blank')">Official Store</button>
@@ -122,7 +122,7 @@
 
 			<div class="brand">
 				<div>
-					<img src="images/samsunglogo.png">
+					<img src="images/Samsunglogo.png">
 				</div>
 				<div>
 					<button id="official" onclick=" window.open('https://www.samsung.com/id/','_blank')">Official Store</button>
@@ -134,7 +134,7 @@
 
 			<div class="brand">
 				<div>
-					<img src="images/xiaomilogo.png">
+					<img src="images/Xiaomilogo.png">
 				</div>
 				<div>
 					<button id="official" onclick=" window.open('https://www.mi.co.id/id/index.html','_blank')">Official Store</button>

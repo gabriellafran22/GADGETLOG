@@ -77,7 +77,7 @@
 
 .pro p{
 	text-align: center;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
 	padding: 0 15px;
 }
@@ -120,5 +120,17 @@
 	#ads{
 		height: 200px;
 		margin: 10px;
+	}
+
+	#popularbanner{
+		margin-left: 0;
+	}
+
+	.pro p{
+		font-size: 12px;
+	}
+
+	.pro img{
+		margin-top: 10px;
 	}
 }

@@ -83,3 +83,19 @@ section div.brands div.brand button#Blibli:hover
 		grid-template-columns: 1fr 3fr;
 	}
 }
+
+@media screen and (max-width: 450px) {
+	section div.brands div.brand img
+	{
+		height: 60px;
+		width: 60px;
+		margin-right: 0;
+	}
+
+	section div.brands div.brand button
+	{
+		border-radius: 25px;
+		width: 110px;
+		font-size: 12px;
+	}
+}

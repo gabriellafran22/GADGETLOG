@@ -120,7 +120,7 @@ require "function.php";
             <div class="namerating">
                 <div class="name">
                     <h3>
-                        <img src='<?php echo "images/".lcfirst($phonebrand['name'])."logo.png"?>' width="40px">
+                        <img src='<?php echo "images/".$phonebrand['name']."logo.png"?>' width="40px">
                         <?php echo $phone['phonename']?>
                     </h3>
                 </div>

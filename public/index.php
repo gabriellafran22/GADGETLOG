@@ -22,6 +22,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
 	<!-- HEADER -->
 	<header>
@@ -84,7 +85,7 @@
 	</header>
 
 	<!-- NAVIGATION BAR -->
-	<nav class="navbar">
+	<nav class="navbar" id="spannavbar">
 		<a href="index.php" class="active"><b>HOME</b></a>
 		<a href="brands.php"><b>BRANDS</b></a>
 		<a href="store.php"><b>STORE</b></a>

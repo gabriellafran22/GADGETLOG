@@ -39,6 +39,7 @@ div#logo{
 
 div#logo:hover{
 	background-image: url('../images/logo1.jpg');
+	transition-delay: 0.1s;
 }
 
 .search{
@@ -316,5 +317,25 @@ footer p{
 
 /*phones*/
 @media screen and (max-width: 450px) {
+	header{
+		grid-template-columns: 3.5fr 1fr;
+	}
 
+	.search{
+		width: 250px;
+	}
+
+	#search-Phone{
+		width: 190px;
+	}
+
+	.navbar a{
+		font-size: 10px;
+	}
+	
+	div#logofooter{
+		height: 49px;
+		width: 315px;
+		background-size: 315px;
+	}
 }

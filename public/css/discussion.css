@@ -56,8 +56,34 @@ section div.container div{
 }
 
 @media screen and (max-width: 450px) {
+	section p{
+		font-size: 14px;
+		font-weight: bold;
+	}
+	
 	section div.container
 	{
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	section div.container div{
+		width: 142px;
+		height: 272px;
+	}
+
+	.container div img{
+		width: 90px;
+		height: 90px;
+		margin: 15px 25px;
+	}
+	
+	.container div button{
+		font-size: 12px;
+		border: 2px;
+		border-style: solid;
+		border-radius: 25px;
+		width: 100px;
+		margin: 100px 0 10px 23px !important;
+		font-weight: bold;
 	}
 }

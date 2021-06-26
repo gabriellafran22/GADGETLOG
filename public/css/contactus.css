@@ -142,3 +142,40 @@
 		height: max-content;
 	}
 }
+
+@media screen and (max-width: 450px) {
+	.section{
+		grid-template-areas: 
+		"ads msg"
+		"about about";
+	}
+
+	.ads{
+		margin-bottom: 80px;
+	}
+
+	.words h2{
+		font-size: 18px;
+		text-align: center;
+	}
+	
+	.words p{
+		font-size: 12px;
+	}
+	
+	.words li{
+		font-size: 12px;
+	}
+
+	.cntcus label{
+		font-size: 12px;
+	}
+	
+	.cntcus label p{
+		font-size: 12px;
+	}
+	
+	.cntcus label input{
+		width: 130px;
+	}
+}

@@ -194,3 +194,22 @@ div.specs div.section
 		margin-top: 750px;
 	}
 }
+
+@media screen and (max-width: 450px) {
+	div.specs
+	{
+		margin-top: 950px;
+	}
+
+	div.specs div.section 
+   div.inner-section div.part div.property /* mampus panjang */
+	{
+		font-weight: bold;
+	}
+
+	div.specs div.section div.inner-section
+	{
+		margin-left: 32px;
+	}
+
+}

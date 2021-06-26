@@ -99,7 +99,7 @@
 		<p> START A DISCUSSION OR SEARCH YOUR PROBLEMS <br> FOR YOUR GADGET BRANDS HERE!</p>
 		<div class="container">
 			<div>
-				<img src="images/applelogo.png">
+				<img src="images/Applelogo.png">
 				<?php if (isset($_SESSION["login"])): ?>
 					<button onclick=" window.open('discussarea.php?brand=Apple','_self')" style="margin-top:125px;">BROWSE</button>
 				<?php else: ?>
@@ -107,7 +107,7 @@
 				<?php endif ?>
 			</div>
 			<div>
-				<img src="images/huaweilogo.png">
+				<img src="images/Huaweilogo.png">
 				<?php if (isset($_SESSION["login"])): ?>
 					<button onclick=" window.open('discussarea.php?brand=Huawei','_self')" style="margin-top:125px;">BROWSE</button>
 				<?php else: ?>
@@ -116,7 +116,7 @@
 	
 			</div>
 			<div>
-				<img src="images/samsunglogo.png">
+				<img src="images/Samsunglogo.png">
 				<?php if (isset($_SESSION["login"])): ?>
 					<button onclick=" window.open('discussarea.php?brand=Samsung','_self')" style="margin-top:125px;">BROWSE</button>
 				<?php else: ?>
@@ -124,7 +124,7 @@
 				<?php endif ?>
 			</div>
 			<div>
-				<img src="images/xiaomilogo.png">
+				<img src="images/Xiaomilogo.png">
 				<?php if (isset($_SESSION["login"])): ?>
 					<button onclick=" window.open('discussarea.php?brand=Xiaomi','_self')" style="margin-top:125px;">BROWSE</button>
 				<?php else: ?>

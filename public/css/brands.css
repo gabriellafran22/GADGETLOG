@@ -1,5 +1,9 @@
+#login.dropdown{
+	margin-left: 14px;
+}
+
 div#login button{
-	margin: 0 20px 10px 0 !important;
+	margin: 0 0 10px 0 !important;
 }
 
 .dropbtn {
@@ -17,7 +21,7 @@ div#login button{
 .dropdown-content {
 	display: none;
 	position: absolute;
-	top: 1%;
+	top: 0;
 	min-width: 180px;
 	width: auto;
 	box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
@@ -41,4 +45,18 @@ div#login button{
 
 .dropbtn:hover .dropdown-content:focus{
 	display: block;
+}
+
+@media screen and (max-width: 450px) {
+	.dropdown {
+		font-size: 16px;
+  	}
+
+	.dropbtn {
+		margin-bottom: 35px;
+	}
+
+	.dropdown-content {;
+		margin-left: 80px;
+	}
 }
